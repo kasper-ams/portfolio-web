@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+      (function () {
+        var t;
+        try { t = localStorage.getItem('theme'); } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Refining Product-Market Fit</title>
+
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+          <nav>
+            <a href="./index.html" onclick="window.location.href='./index.html'; return false;">← Back</a>
+          </nav>
+        </div>
+        <button type="button" class="theme-toggle" role="switch" aria-checked="false" aria-label="Dark mode" title="Toggle dark mode">
+          <span class="theme-toggle-knob" aria-hidden="true">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </span>
+        </button>
+      </header>
+    
+    <section id="project-hero">
+        <div class="work-container">
+            <div class="project-grid">
+               <div class="project-image-container">
+                <img src="images/HM2.png" alt="HackMotion" class="project-hero-image">
+            </div>
+            <div>
+                <h1>Refining Product-Market Fit</h1>
+                <div class="summary-card">
+                <h3>To help the company retain its upgraded users, we needed to increase the value-add of the pro features, 
+                 to increase the adoption and satisfaction with the pro plan.</h3>
+            </div>    
+            </div>
+            </div>
+            
+         
+        </div>
+    </section>
+    
+    <section id="project-overview">
+        <div class="work-container">
+            <div class="project-grid">
+                    <h2>The problem</h2>
+                    <p class="p-case">When customers buy Hackmotion device, they can start using it right away as it comes with the Core plan included. This costs 299$. However, additional features of the app are available as an upgrade either as a Plus or Pro plan, costing 499$ and 999$ respectively. Those who chose to upgrade however, were not satisfied.</p>
+                    <p class="p-case">One of the upgraded features is Putting. For users who do try Putting practice, one issue is that they often get “all green”(success) status, without further guidance on what to do next. This leads to unfulfilling practice and low Putting adoption. Users who have upgraded from Core plan to access putting, get low value from it and express their dissatisfaction.</p>
+                    <p class="p-case">Therefore, the project goal is to increase the value add of Putting to upgraded users to increase the adoption and satisfaction with the feature.</p>
+                    
+                    <div class="project-image-container">
+                        <img src="images/pmf.png" class="project-hero-image-small">
+                    </div>
+
+
+            <div class="project-grid">
+                <h2>Proof of problem</h2>
+                <h3>Churn</h3>
+                <p class="p-case">Users who upgraded to the Plus version of the app requested to downgrade and go back to the basic version as they did not get enough value out of it.</p>
+                <div class="project-image-container">
+                    <img src="images/churn.png" class="project-hero-image-small">
+                </div>
+                <h3>Low feature adoption</h3>
+                <p class="p-case">In HackMotion terms, feature adoption means making 10 shots with a club. This is
+                    the data where we saw large discrepancy between Full swing and Putting data.</p>
+                <p class="p-case">From Home screen there are 2 options: to try Full swing or Putting. About 1/3 of
+                    users go to putting. These are the intended users who would need to start using
+                    the feature. From there on, about 30% complete the 10 shots.</p>  
+                <p class="p-case">Over time the Putting adoption has remained low - only about 3%, much lower
+                    than the 62% of Full swing.</p> 
+                <div class="project-image-container">
+                        <img src="images/adoption.png" class="project-hero-image-small">
+                  </div>
+                
+                <h3>Low feature satisfaction</h3>
+                <p class="p-case">Users reach out to support with complaints about their practice being successful
+                    and not being sure what to do next.</p>
+
+                    <div class="project-image-container">
+                        <img src="images/sat1.png" class="project-hero-image-small">
+                  </div>
+                  <div class="project-image-container">
+                    <img src="images/sat2.png" class="project-hero-image-small">
+              </div>
+              <p class="p-case">User quotes:</p>
+              <p class="quote">"Was not getting much feedback from the practice strokes.
+                Most of the putts I made were “green""</p>            
+              <p class="quote">"I use it and everything is green 95% of the time, but I know my
+                putting isn't as good as usual"</p>
+              <p class="quote">"Putting is not exciting - green all the time. Tried before call"</p>                
+
+              <h3>Missing additional value-add</h3>
+
+              <p class="p-case">Users have asked for putting related features such as tempo, which means that
+                they are able to swing the club consistently in upwards and downwards motion.
+                They are using some rather simple existing solution on the market to help them
+                with this, such as metronome, or golf tempo apps.</p>
+                <p class="p-case">User quotes:</p>
+
+                <p class="quote">"You could provide more information about wrist movement
+                    during the shot: trajectory, speed, acceleration, and timing"</p>            
+                  <p class="quote">"Would like to see some putting drills"</p>
+                  <p class="quote">"My main feedback is this: I would use the app more for putting
+                    if it included some essential functionality that I feel is currently
+                    missing. Features like rotation and tempo aren’t yet included in
+                    the module."</p> 
+            </div>
+             
+            
+        </div>
+    </section>
+    
+    <section id="Hypothesis">
+        <div class="work-container">
+            <h2>Hypothesis</h2>
+            <div class="project-grid">
+                  <p class="p-case"> We believe that users would benefit from additional putting drills and exercises
+                    that have:</p>
+                    <ul>
+                        <li>more challenging practice that allows players to improve even more;</li>
+                        <li>tailored recommendations based on the issues detected;</li>
+                        <li>features that offer what they are already using through other tools.
+                        </li>
+                    </ul>
+                    <p class="p-case">This should lead to more engaged users, better Putting adoption and increased
+                        satisfaction too.
+                    </p>
+                    <p class="p-case">Therefore, our goals would be to:
+                        <ul>
+                            <li>increase the feature adoption by 2x;</li>
+                            <li>increase the feature satisfaction to 4.8.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="exploring-solutions">
+        <div class="work-container">
+            <h2>Industry examples</h2>
+            <div class="project-grid">
+            <div class="horizontal-scroll-container">
+                <img src="images/ex1.png" class="horizontal-scroll-item-small">
+                <img src="images/ex2.png" class="horizontal-scroll-item-small">
+                <img src="images/ex3.png" class="horizontal-scroll-item-small">
+                <img src="images/ex4.png" class="horizontal-scroll-item-small">
+
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="Proposed solutions">
+        <div class="work-container">
+            <h2>Proposed solutions</h2>
+                    <p class="p-case">I ran an ideation workshop to get the ideas from the team and come up with
+                        clusters of opportunities. We came up with several, which I organized in a solution
+                        opportunity tree.
+                    </p>
+                
+                    <div class="project-image-container">
+                        <img src="images/matrix2.png" class="project-hero-image-small">
+                    </div>
+
+                    <p class="p-case">Then the solutions were mapped on the impact-effort axis to understand the most
+                        effective ones to start with (in green).
+                    </p>
+
+                    <p class="p-case"><strong>Wrist Stability with distances:</strong> We would provide users with a "distance"
+                        challenge where they can choose how far the putt should go, then we could
+                        measure the putt performance according to the distance selected.
+                       </p>
+                   
+                    <p class="p-case"><strong>Rhythm mode with sound:</strong> We might offer audio tempo guides that will help users
+                        to swing in consistent rhythm, or simply a metronome.
+                    </p>
+                    
+                    <p class="p-case"><strong> Wrist stability with tempo metric:</strong> We could also add a Ratio metric, which is a
+                        proxy for your tempo. This would allow users to play and see the data feedback in
+                        real-time.
+                    </p>
+        </div>
+    </section>
+    
+    <section id="Solution design">
+        <div class="work-container">
+            
+            <h2>Solution design</h2>
+              <p class="p-case"> Because of the reliance on the physical device - the way we measure the data and show it to the users, there was additional step needed in the design process. It essentially required to create initial design in low to medium fidelity, review it with engineers, and then proceed with technical prototyping. Then the test is run with golf equipment to see whether it can work in practice. Once that stage is validated, design can be further developed in higher fidelity.
+              </p>
+              <div class="project-image-container">
+                <img src="images/process.png" class="project-hero-image">
+            </div>
+
+            <div class="project-grid">
+            <h3>Added distances and additional metrics</h3>
+            <div class="project-image-container">
+                <img src="images/distances.png" class="project-hero-image">
+            </div>
+            <p class="p-case">This allows golf players to select a short, medium, or long putt distance, on which we would then base the performance feedback.</p>
+             </div>
+
+             <div class="project-grid"> 
+            <h3>Wrist stability drill</h3>
+            <div class="project-image-container">
+                <img src="images/flex-ext.png" class="project-hero-image">
+            </div>
+            <p class="p-case">The first drill focuses on players wrist stability, allowing them to make repeaded putts with targeted feedback.</p>
+              </div>
+
+              <div class="project-grid">  
+            <h3>Timing drill</h3>
+            <div class="project-image-container">
+                <img src="images/timing.png" class="project-hero-image">
+            </div>
+            <p class="p-case">Timing drill allows players to make putts with more consistent strokes. This training mode involes the use of metronome that is tuned to match the speed of the recommended putt.</p>
+             </div>
+
+             <div class="project-grid">  
+            <h3>Metronome in practice session</h3>
+            <div class="project-image-container">
+                <img src="images/metronome.png" class="project-hero-image">
+            </div>
+            <p class="p-case">Finally, metronome is available during a regular session, so that players can listen to the optimal BMP, while keeping an overview of all the performance metrics.</p>
+              </div>
+
+        </div>
+    </section>
+
+    <section id="Solution validation">
+        <div class="work-container">
+            <h2>Solution validation</h2>
+              <p class="p-case"> The solutions were validated in 3 parts. The first phase took place on-site (see design image below), where I tested the concept with stakehodlers.
+              </p>
+              <div class="project-image-container">
+                <img src="images/test-1.jpeg" class="project-hero-image">
+            </div>
+            <p class="p-case"> This allowed me to catch early feedback regarding the feel of the solution - I quickly found out that the prototype needs to be tested in real-life scenario to 
+                understand how well it can work to help a player progress and learn. 
+            </p>
+
+            <div class="video-container">
+                <video controls width="100%">
+                  <source src="images/dev-putt.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+            <p class="p-case"> The next part was done through user interviews. We had a weekly calendar slot allocated to user calls - they are able to book a call with us directly, and many do so to 
+                ask a question about Hackmotion. This was a good opportunity to quickly show a prototype and get their feedback in a continuous manner. 
+            </p>
+
+            <p class="p-case"> And lastly, we released the updates incrementally to ensure the core metrics stay healthy. If we didnt see any negative trends, we kept increasing the feature rollout.
+            </p>
+        </div>
+    </section>
+
+
+    <section id="Outcome and learnings">
+        <div class="work-container">
+            <h2>Outcome and learnings</h2>
+
+            <p class="p-case"> We followed an incremental rollout approach, where the each feature was released separately to measure the impact on the adoption.
+            </p>
+
+            <div class="project-image-container">
+                <img src="images/mvp-release.png" class="project-hero-image-small">
+            </div>
+              
+            <p class="p-case"> 
+                In the first release we introduced the putting distances. While it was perceived positively, we learned that the users who complained about it being too easy, are in fact vocal minority.
+                Through more comprehensive data in mixpanel we saw that that users were challenged enough during the practice - less than 50% of them were able to complete the session without hiccups for one metric. 
+                When multiple performance metrics are taken into account, this percentage goes down to 20% or less. So then we decided to add tips and drills for users to practice wrist stability.
+            </p>
+
+            <p class="p-case">We also learned that users don't use the long putt distance we provided, and distance selection step causes some drop-off. Also, early user feedbacl indicated that they dont have that specific distance available at home where they practice. 
+                We decided to remove the intial distance selection step, reverting to the default as used before, and planned to place it in a separate training mode, capturing users with more intent.
+
+            </p>
+            <p class="p-case"> In the next release we added a training drill to practice where players could work on their wrist stability and timing. This was somehting that users were missing, so we received positive feedback in our social groups. 
+                The most challenging part of this was the prototyping, as you couldn't really understand how well the drill will work based on the design alone. It had to be build quickly by an engineer, and tested on-site.
+                During the testing I had to work on sound design, as we discovered that there was no such sound available that could indicate the incorrect position of the wrist. Another on-the-go amendment was a range gauge, which
+                had to be more visible and match the motion of the wrist.
+            </p>
+
+            <div class="project-grid">
+            <h3>Metrics</h3>
+            <p class="p-case"> To recap -  we wanted to increase the agerage putting session count per user by 2x, and increase the feature satisfaction to 4.8.
+            </p>
+            <p class="p-case"> The average session count increased steadily since we started to work on it. While we didn't achieve the desired 2x in the quarter, we still had considerable improvement, despite going into the spring season when the average usage tends to fall.
+            </p>
+
+            <div class="project-image-container">
+                <img src="images/putting-week.png" class="project-hero-image-small">
+            </div>
+
+            <p class="p-case"> To measure the satisfaction with putting, we launched a survey at the end of the practice. We hoped to achieve 4.8 to be on par with the full swing practice, and landed on 4.25. 
+            </p>
+            
+            <div class="project-image-container">
+                <img src="images/satisfaction.png" class="project-hero-image-small">
+            </div>
+
+            <p class="p-case"> Overall, these are the main takeaways:
+            </p>
+            <li>Validate the problem by triangulating the data - one user signal can be misleading, and potentially lead astray </li>
+            <li>When the user base is small, qualitative feedback matters. It's important to build relationships in the community. </li>
+            <li>Golf is a sport where data goes against the feel sometimes. By improving performance metrics, you won't necessarily play better.</li>
+            <li>Seasonality matters - we would see spikes of usage in certain days, and less sessions overall in the summer, compared to winter.</li>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+          <div class="footer-links-container">
+            <div class="footer-text">Thanks for stopping by!</div>
+            <div class="social-links">
+              <a href="mailto:ksprs@icloud.com">Email me</a>
+              <a href="https://www.linkedin.com/in/kasper-jelaiskis-8974b57b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://dribbble.com/kasperj" target="_blank" rel="noopener noreferrer">Dribbble</a>
+              <a href="https://read.cv/kasperj" target="_blank" rel="noopener noreferrer">Read.cv</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+      (function () {
+        var t;
+        try { t = localStorage.getItem('theme'); } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Reimagining Product Management</title>
+
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+          <nav>
+            <a href="./index.html" onclick="window.location.href='./index.html'; return false;">← Back</a>
+          </nav>
+        </div>
+        <button type="button" class="theme-toggle" role="switch" aria-checked="false" aria-label="Dark mode" title="Toggle dark mode">
+          <span class="theme-toggle-knob" aria-hidden="true">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </span>
+        </button>
+      </header>
+    
+    <section id="project-hero">
+        <div class="work-container">
+            <div class="project-grid">
+               <div class="project-image-container">
+                <img src="images/pfy_cover3.png" alt="Printify" class="project-hero-image">
+            </div>
+            <div>
+                <h1>Reimagining Product Management</h1>
+                <div class="summary-card">
+                <h3>Online sellers tend to have many products in the inventory, which makes managing them a time consuming and often dreaded task. I led the design to improve this experience for merchants on Printify platform. The outcome was more efficient merchants who spent less time being stuck in the products and could focus on growing their business instead.</h3>
+            </div>    
+            </div>
+            </div>
+            
+         
+        </div>
+    </section>
+    
+    <section id="project-overview">
+        <div class="work-container">
+            <div class="project-grid">
+                    <h2>Do we need engagement?</h2>
+                    <p class="p-case">While for some it might be tempting to increase user engagement on their product, it wasn't the case for us. Printify is a productivity tool - a place where you can create and manage your online merchandise. We knew our users are very busy, so we need to let them achieve their goals as quickly and easily as possible. So that they can spend their time on increasign the revenue instead.</p>
+                
+                    <p class="quote">"The more successful our users are, the more successful we are as a company."</p>            </div>
+            <div class="project-grid">
+                <h2>Starting with Why</h2>
+                <p class="p-case">I interviewed 7 merchants to find out what needs, pains and desires they had with the product management. I was interested in the key actions users make on the product dashboard, such as naming, searching, looking at images and also open to hear what was missing to make their experience better. </p>
+            </div>
+                <div class="project-image-container">
+                    <img src="images/interview_pt.png" class="project-hero-image">
+                </div>
+                <p class="p-case">There was a lot of tagging the transcripts, combining and synthesizing insights afterwards. As the team had limited time and resources we really wanted to separate the "painkiller" problems and focus on those first.
+                </p>
+            
+        </div>
+    </section>
+    
+    <section id="project-challenge">
+        <div class="work-container">
+            <h2>It didn't work the way merchants worked</h2>
+            <div class="project-grid">
+                  <p class="p-case">The first version of product dashboard was filled with assumptions and lacked user validation. We found out that users mental model was quite different from the implementation model.</p>
+                    <ul>
+                        <li>There was no way to organise the products in a way that would make sense for the merchants</li>
+                        <li>It was difficult to understand the product profitability</li>
+                        <li>Users had tons of similar looking products that can be easily confused
+                        </li>
+                    </ul>
+                    <p class="p-case">These issues were hurting the growing merchants as increase in revenue correlates with the increase in the product count.
+                    </p>
+                    <div class="project-image-container">
+                        <img src="images/list1.png" class="project-hero-image">
+                    </div>
+                <p class="p-case">We also knew that merchants used long product titles for SEO and discoverability, which made them all too similar.
+                </p>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    
+    <section id="exploring-solutions">
+        <div class="work-container">
+            <h2>Exploring solutions</h2>
+            <div class="project-grid">
+                    <p class="p-case">I took a collaborative path and involved engineers into the solution discovery early on. I had some ideas of my own, but I like to get diverse perspectives together and see what comes out in the end. As COVID was in full swing I led a remote workshop to align on core user problems and brainstorm solutions together.</p>
+                    <div class="project-image-container">
+                        <img src="images/miro.png" class="project-hero-image-small">
+                    </div>
+                <p class="p-case">After putting the ideas together, an opportunity solution tree emerged. This way we could see an overview of what initiatives we have and what assumptions to validate for each of them. Also, it served as a good reminder to ditch the ideas that aren't worth pursuing since all that matters is the outcome, not the output.
+                </p>
+                <div class="project-image-container">
+                    <img src="images/OST1.jpeg" class="project-hero-image-small">
+                </div>
+            <p class="p-case"> To test these assumptions I had to create various prototypes that would allow us to quickly learn whether an idea is usable, viable, desirable and feasible. Started with sketching on paper and later moved to interactions on Figma.
+            </p>
+            <div class="horizontal-scroll-container">
+                <img src="images/notebook.jpeg" class="horizontal-scroll-item">
+                <img src="images/solution1.jpeg" class="horizontal-scroll-item">
+                <img src="images/solution2.jpeg" class="horizontal-scroll-item">
+            </div>
+            <p class="p-case">Then I tested the designs with more merchants. Here I was looking to validate my usability and desirability assumptions (do they understand how it works, and whether they actually need to address these issues right now). Feasibility and viability assumptions were validated with internal stakehodlers.
+            </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="delivery">
+        <div class="work-container">
+            <h2>The first delivery</h2>
+                    <p class="p-case">After the user and internal validation we landed on a set of features that worked with users and we were able to deliver. Instead of releasing it all at once we took several steps to roll out all the new features while measuring the impact on conversions via AB test.
+                    </p>
+                    
+                
+                    <div class="project-image-container">
+                        <img src="images/release1.jpeg" class="project-hero-image">
+                    </div>
+                    <p class="p-case">One key change was to enable users to work in bulk actions, thus saving time on common yet mundane and repetitive taks.
+                    </p>
+                    <div class="project-image-container">
+                        <img src="images/solution3.jpeg" class="project-hero-image">
+                    </div>
+                    <p class="p-case">In addition we introduced several new ways to manage products, such as adding tags and filters. Stock and sales info had to be displayed clearly yet without being distracting.
+                    </p>
+                    <div class="project-image-container">
+                        <img src="images/solution4.jpeg" class="project-hero-image">
+                    </div>
+                    <p class="p-case">As we learned that seeing a clear image was important to some users, we added a way to view products by grid. This way the image was easier to see in detail without having to click to zoom in.
+                    </p>
+                    <div class="project-image-container">
+                        <img src="images/solution5.jpeg" class="project-hero-image">
+                    </div>
+        </div>
+    </section>
+    
+    <section id="project-results">
+        <div class="work-container">
+            <h2>In hindsight</h2>
+              <p class="p-case">After launching this to all users I learned that as we truncated the product names, some of that hidden information would still be valuable to users. So a quick iteration followed where we added a dotted line indicating that hovering the product name would reveal the full name in a tooltip.
+              </p>
+              <div class="project-image-container">
+                <img src="images/tooltip.jpeg" class="project-hero-image">
+            </div>
+            <p class="p-case">Now, lets go back to the desired product outcome (more productive merchants). Our hypothesis was that this leading KPI would correlate with increased revenue for our merchants (lagging KPI). We measured the time to initiate a "product management action", such as replacing a product, or creating a duplicate. As a result, merchants spent 50% less time to trigger a product management action.
+            </p>
+            <p class="p-case">This let us achieve our target to reduce the overhead for merchants and get the messy products out of their way.These are just the basiscs to improve the user experience. I would like to continue exploring how we can deliver more useful sales and data insights to merchants so that they can make better product decitions. This is what they try to collect already in spreadsheets and various other tools, so having a centralised space for it seems like a good opportunity to explore.
+            </p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+          <div class="footer-links-container">
+            <div class="footer-text">Thanks for stopping by!</div>
+            <div class="social-links">
+              <a href="mailto:ksprs@icloud.com">Email me</a>
+              <a href="https://www.linkedin.com/in/kasper-jelaiskis-8974b57b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://dribbble.com/kasperj" target="_blank" rel="noopener noreferrer">Dribbble</a>
+              <a href="https://read.cv/kasperj" target="_blank" rel="noopener noreferrer">Read.cv</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

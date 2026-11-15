@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+      (function () {
+        var t;
+        try { t = localStorage.getItem('theme'); } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Illustrations</title>
+    
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+          <nav>
+            <a href="./index.html" onclick="window.location.href='./index.html'; return false;">← Back</a>
+          </nav>
+        </div>
+        <button type="button" class="theme-toggle" role="switch" aria-checked="false" aria-label="Dark mode" title="Toggle dark mode">
+          <span class="theme-toggle-knob" aria-hidden="true">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </span>
+        </button>
+      </header>
+    
+    <section id="project-hero">
+        <div class="work-container">
+            <div class="project-grid">
+               <div class="project-image-container">
+                <img src="images/illustrations.jpg" alt="Illustrations" class="project-hero-image">
+            </div>
+            <div>
+                <h1>Error and empty states</h1>
+                <div class="summary-card">
+                <h3>Vintage-looking, monochrome, a bit playful and applicable to various situations. I created these illustrations to add a bit of human touch to the generally robotic error and empty states. For a different look, the colour can be easily adjusted with a hue slider.</h3>
+            </div>    
+            </div>
+            </div>
+            
+         
+        </div>
+    </section>
+    
+    <section id="project-overview">
+        <div class="work-container">
+            <div class="project-grid">
+                <div class="project-image-container">
+                    <img src="images/illustration-1.png" class="project-hero-image">
+                    <img src="images/illustration-2.png" class="project-hero-image">
+                    <img src="images/illustration-3.png" class="project-hero-image">
+                    <img src="images/illustration-4.png" class="project-hero-image">
+                    <img src="images/illustration-5.png" class="project-hero-image">
+                    <img src="images/illustration-6.png" class="project-hero-image">
+
+                </div>  
+
+                
+                   
+            
+            </div>
+          
+                         
+        </div>
+    </section>
+    
+
+    
+    <footer>
+      <div class="container">
+        <div class="footer-links-container">
+          <div class="footer-text">Thanks for stopping by!</div>
+          <div class="social-links">
+            <a href="mailto:ksprs@icloud.com">Email me</a>
+            <a href="https://www.linkedin.com/in/kasper-jelaiskis-8974b57b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://dribbble.com/kasperj" target="_blank" rel="noopener noreferrer">Dribbble</a>
+            <a href="https://read.cv/kasperj" target="_blank" rel="noopener noreferrer">Read.cv</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

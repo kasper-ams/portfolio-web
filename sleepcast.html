@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+      (function () {
+        var t;
+        try { t = localStorage.getItem('theme'); } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Hacking Engagement</title>
+
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+          <nav>
+            <a href="./index.html" onclick="window.location.href='./index.html'; return false;">← Back</a>
+          </nav>
+        </div>
+        <button type="button" class="theme-toggle" role="switch" aria-checked="false" aria-label="Dark mode" title="Toggle dark mode">
+          <span class="theme-toggle-knob" aria-hidden="true">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </span>
+        </button>
+      </header>
+
+    <section id="project-hero">
+        <div class="work-container">
+            <div class="project-grid">
+               <div class="project-image-container">
+                <img src="images/sleepcast-hero.png" alt="Sleepcast app library screen" class="project-hero-image img-phone">
+            </div>
+            <div>
+                <h1>Hacking engagement</h1>
+                <div class="summary-card">
+                <h3>Summary:</h3>
+                <p><b>Role:</b> Solo designer, developer and content creator</p>
+                <p><b>Platform:</b> iOS mobile app</p>
+                <p><b>Tools:</b> Xcode, Procreate, ElevenLabs, RevenueCat, Firebase Analytics</p>
+                <p><b>Problem:</b> Many people struggle to switch off their thoughts at bedtime. I wanted to see whether calm, story-driven audio could help people wind down.</p>
+                <p><b>Approach:</b> I hypothesised that people need 3–4 sessions to feel the value, so I launched with a library of 10 audio stories, hand-drawn artwork and a 7-day free trial at 2.99/month. I then tested a sound mixer, a dream journal and several acquisition channels, guided by usage data.</p>
+                <p><b>Results:</b></p>
+                <ul>
+                    <li>Average engagement time doubled, from 50 seconds to 1 min 40 s (+100%)</li>
+                    <li>Calming sound features opened about 3x more often than stories</li>
+                    <li>Trial-to-paid conversion of about 25%</li>
+                </ul>
+            </div>
+            </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="overview">
+        <div class="work-container">
+            <div class="project-grid">
+
+                <h2>The problem</h2>
+                <p class="p-case">I used to struggle falling asleep (and still do sometimes), and tried various ways to help myself, until one evening I had a realisation that listening to podcasts before bed really put me at ease. Maybe it was the break from screens, or simply giving my mind something else to follow, but I kept doing it until I stumbled upon Alan Watts' podcast – a series of lectures recorded in the 70s, with crackling sound, abstract topics, good storytelling. Fast-forward several years and I'm happily writing my own sleep-podcast script.
+                </p>
+                <p class="p-case">Sleep audio is a proven category. Apps like Headspace and BetterSleep already serve it well, with large content libraries and polished sound tools. I researched how users talk about their struggles and what tools they use on Reddit, looking for keywords “sleep tale”, “sleep story”, “sleep meditation” among others. Some takeaways were that users do indeed find it valuable, integrating stories into their whole bedtime routine and appreciating hearing the same voice across stories.
+                </p>
+                <div class="project-image-container">
+                    <img src="images/sleepcast-detail-1.png" alt="Reddit post about sleep stories" class="project-hero-image img-column" loading="lazy">
+                </div>
+                <div class="project-image-container">
+                    <img src="images/sleepcast-detail-2.png" alt="Reddit comment about listening to the same voice every night as a habit" class="project-hero-image img-column" loading="lazy">
+                </div>
+                <div class="project-image-container">
+                    <img src="images/sleepcast-detail-3.png" alt="Reddit comment saying the voice needs to be calm, steady and interesting" class="project-hero-image img-column" loading="lazy">
+                </div>
+                <p class="p-case">This led me to think that strong audio content with a soothing, high-quality voice was worth pursuing first.
+                </p>
+
+                <h2>Capturing engagement</h2>
+                <p class="p-case">I designed the app with a hypothesis that users who would spend more time in-app, listening to a podcast, or a sleep-sound would get to the aha moment (better sleep) faster. I assumed that it would be unlikely for someone to get there during the first-time use. I estimated 3–4 uses to learn the main value prop (diverting invasive thoughts) and become an activated user.
+                </p>
+                <p class="p-case">So, one of the metrics I set out to track was the session length as well as user activity over time and retention.
+                </p>
+                <p class="p-case">The initial app version was a simple flow: the user lands on a welcome screen, sees a paywall, then lands in the audio library.
+                </p>
+                <p class="p-case">To work with my assumption of 3–4 days of repeated use, I had to have enough content for users to engage with. So I created a list of 10 audio stories to start with – some of them free, and the rest accessible via subscription.
+                </p>
+
+                <h2>Content</h2>
+                <p class="p-case">The idea behind the content was to create an immersive soundscape with a narrative that takes the listener somewhere else, quiets racing thoughts and builds a calmer mindset. I wrote the script outline myself, and used AI to fill in the gaps, then refine.
+                </p>
+                <div class="project-image-container">
+                    <img src="images/sleepcast-detail-4.png" alt="Excerpt of a sleep story script" class="project-hero-image img-column" loading="lazy">
+                </div>
+                <p class="p-case">Once I'm happy with the script, I paste it into ElevenLabs and generate with a soothing voice. Finally, I trim the audio recording for a more natural flow, adding pauses and silences where needed.
+                </p>
+                <p class="p-case">For the audio cover I wanted to create something human and authentic – since I already used plenty of AI until this point. So I drew all the illustrations myself on Procreate, including the app icon.
+                </p>
+                <div class="project-image-container">
+                    <img src="images/sleepcast-detail-5.png" alt="Hand-drawn story cover illustrations made in Procreate" class="project-hero-image img-column" loading="lazy">
+                </div>
+                <p class="p-case">As for the paywall, I went with only a single monthly plan initially, to test the price sensitivity and willingness to pay. I used RevenueCat for an easy integration.
+                </p>
+                <div class="project-image-container">
+                    <img src="images/sleepcast-detail-6.png" alt="Sleepcast paywall with a 7-day free trial" class="project-hero-image img-phone" loading="lazy">
+                </div>
+
+                <h2>First launch</h2>
+                <p class="p-case">The initial data was pointing towards the brief usage of the content, with most users churning on day 1.
+                </p>
+                <p class="p-case">They discovered the content, understood how to use it, but engagement wasn't really there. In subsequent iterations I kept adding more audio stories to increase the library, as well as started working on a new feature where users could create and mix their own ambiance by selecting from various sounds, such as rain, ocean waves, old wall clock. My assumption was that this would cater to those users who don’t always want to listen to someone speaking, but still want a soothing sound in the background.
+                </p>
+
+                <h2>User acquisition</h2>
+                <p class="p-case">The App Store will push the app higher in discoverability upon its first launch, however, it’ll soon slide down the list and fewer users will notice it outright. This was another challenge I had to tackle in parallel. I decided to try paid ads on the app store, as well as promoting my app on Reddit, but since it costs me money, I needed to stop relying on this soon.
+                </p>
+                <p class="p-case">The paid ads were a reliable source of traffic, which I needed to validate my assumptions. But using Reddit was trickier, since self-promoted content quickly gets downvoted. So I used a bot that looks for specific key words on posts, such as “sleep tale”, “sleep meditation” and send those posts to my inbox. Then I would reply to those posts, in a natural and topical manner, driving free traffic.
+                </p>
+                <p class="p-case">Another small experiment I decided to add was an option to share a sleep affirmation as an image. This would capture a screenshot of the affirmation, add the app logo, and let users share it natively via social media.
+                </p>
+                <div class="project-image-container">
+                    <img src="images/sleepcast-detail-7.png" alt="Shareable sleep affirmation card" class="project-hero-image img-column" loading="lazy">
+                </div>
+                <div class="project-image-container">
+                    <img src="images/sleepcast-detail-8.png" alt="Chart of daily, weekly and monthly active users over time" class="project-hero-image img-column" loading="lazy">
+                </div>
+                <p class="p-case">Together, these experiments aimed to grow the active user base enough to run meaningful tests.
+                </p>
+
+                <h2>Next iterations</h2>
+                <p class="p-case">To further increase engagement in the next releases I bundled a few updates. First, I added the ambient sound mixer with both free and premium sounds. The use case is when a user wants to set something in a loop, or as a background for 30 minutes.
+                </p>
+                <div class="project-image-container">
+                    <img src="images/sleepcast-detail-9.png" alt="Sleep sounds mixer screen" class="project-hero-image img-phone" loading="lazy">
+                </div>
+                <p class="p-case">Initial data pointed towards interest in this feature (event: <code>sound_opened</code>).
+                </p>
+                <div class="project-image-container">
+                    <img src="images/sleepcast-detail-10.png" alt="Event counts by event name, showing sound_opened ahead of story_opened" class="project-hero-image img-small" loading="lazy">
+                </div>
+                <p class="p-case">People open sounds about three times as often as stories.
+                </p>
+                <p class="p-case">Next, I added a dream journal, a simple notebook where users can enter details of their dreams. A fairly bare-bones feature, but I wanted to see whether there are any signs of interest in journaling, with an idea of turning it into a part of the user journey where one enters own dreams after waking up.
+                </p>
+                <div class="project-image-container">
+                    <img src="images/sleepcast-detail-11.png" alt="Dream journal screen" class="project-hero-image img-phone" loading="lazy">
+                </div>
+
+                <h2>Takeaways</h2>
+                <p class="p-case">One takeaway for now is that adding more content is a must for continued engagement, so one challenge for me would be to find a way to introduce more sleep tales and sounds, and build my app store profile around them. With added content (sleep stories and sounds in the mixer) in the second iteration <b>average engagement time doubled, from 50 seconds to 1 min 40 s.</b> The initial research on Reddit hinted towards this as the main value gain for the users.
+                </p>
+                <p class="p-case">The trial-to-paid conversion rate sits at about <b>25%</b> at the moment, but the churn once again points to content depth as the main lever.
+                </p>
+                <p class="p-case">Additional features help somewhat, but more data is needed to see which ones have good adoption, and which ones don’t. The dream journal feature gathered only a handful of users, so it might not be adding much value as it is. The core experience of the app still is unwinding to relaxing sounds, or a story.
+                </p>
+                <p class="p-case">I would like to reach out to some of my users and interview them, to get actual feedback of the app as it is, and uncover additional wants and needs they might have.
+                </p>
+
+                <h2>Ideas for future</h2>
+                <p class="p-case">I do have more ideas for next iterations, built around the theme of story. For example, users might hear a customised alarm sound in the morning, based on the sleep sound, or story they listened to.
+                </p>
+                <p class="p-case">I would like to experiment with a human narrator as well, to see whether that makes any difference. When it comes to visual language though, I will continue drawing illustrations by hand, as it differentiates the app from others relying on AI images.
+                </p>
+                <p class="p-case">In user acquisition, I have to keep exploring paid channels besides app store ads, such as Meta ads and YouTube ads, and find the cheapest CPA, while continuously building a loop around user word of mouth (shared affirmations, shared plans, invites etc.).
+                </p>
+                <p class="p-case"><a href="https://apps.apple.com/lv/app/sleepcast-listen-chill/id6477569342" target="_blank" rel="noopener noreferrer">Sleepcast: Listen &amp; Chill on the App Store</a>
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+ <footer>
+    <div class="container">
+      <div class="footer-links-container">
+        <div class="footer-text">Thanks for stopping by!</div>
+        <div class="social-links">
+          <a href="mailto:ksprs@icloud.com">Email me</a>
+          <a href="https://www.linkedin.com/in/kasper-jelaiskis-8974b57b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://dribbble.com/kasperj" target="_blank" rel="noopener noreferrer">Dribbble</a>
+          <a href="https://read.cv/kasperj" target="_blank" rel="noopener noreferrer">Read.cv</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

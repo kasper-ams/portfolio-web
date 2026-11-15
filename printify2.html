@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+      (function () {
+        var t;
+        try { t = localStorage.getItem('theme'); } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Empowering Creative Entrepreneurs</title>
+
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+          <nav>
+            <a href="./index.html" onclick="window.location.href='./index.html'; return false;">← Back</a>
+          </nav>
+        </div>
+        <button type="button" class="theme-toggle" role="switch" aria-checked="false" aria-label="Dark mode" title="Toggle dark mode">
+          <span class="theme-toggle-knob" aria-hidden="true">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </span>
+        </button>
+      </header>
+    
+    <section id="project-hero">
+        <div class="work-container">
+            <div class="project-grid">
+               <div class="project-image-container">
+                <img src="images/pfy_cover1.png" alt="Printify" class="project-hero-image">
+            </div>
+            <div>
+                <h1>Empowering Creative Entrepreneurs</h1>
+                <div class="summary-card">
+                <h3>Printify allows anyone to create and sell custom products online by easily adding their designs to various blank products. My role was to take a look at the designer interface and take it beyond the initial MVP to align with users needs and wants. As a result, we ran multiple stages of discovery and solution validation and were able to increase both user satisfaction and business metrics.</h3>
+            </div>    
+            </div>
+            </div>
+            
+         
+        </div>
+    </section>
+    
+    <section id="project-overview">
+        <div class="work-container">
+            <div class="project-grid">
+                    <h2>We didn't know what we did't know</h2>
+                    <p class="p-case">How do you take something from its initial product market fit to the next level? We knew our user base was growing and so were their needs. Over time we had collected data from customer support where users complain and ask for help, and the team had summarised the issues by category for us. This was the starting point, but surely we needed more data to triangulate and understand where we fall short. Besides having an inkling of <em>What</em>, more work needed to be done to understand <em>Why</em>.</p>                
+                    <div class="project-image-container">
+                        <img src="images/spreadsheet.jpeg" class="project-hero-image-small">
+                    </div>
+
+
+                    <div class="project-grid">
+                <h2>Untangling the issues</h2>
+                <p class="p-case">Even though our users had already written to support with suggestions and complains, we wanted to hear it directly from them. So right at the end of the sales season, we scheduled unstructured interviews to walk through their process and main pain points. We weren't sure which user group was most affected either so we targeted a cross section of all our users - new joiners, monthly regular users and power users.</p>
+            </div>
+                <div class="project-image-container">
+                    <img src="images/interview-tree.png" class="project-hero-image-small">
+                </div>
+                </p>
+            
+        </div>
+    </section>
+    
+    <section id="project-challenge">
+        <div class="work-container">
+            <h2>Emerging patterns</h2>
+            <div class="project-grid">
+                  <p class="p-case">The fun part (for me personally) was tagging the conversations and discovering common patterns across the participants. Though having a large list of user problems can be overwhelming. To make the insights more actionable I also had to understand what importance each issue or solution would have to the user. I like to think in 3 categories: needs, wants and desires.</p>
+                    </p>
+                    <div class="project-image-container">
+                        <img src="images/patterns.png" class="project-hero-image">
+                    </div>
+                </p>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    
+    <section id="exploring-solutions">
+        <div class="work-container">
+            <h2>Aligning with business
+            </h2>
+            <div class="project-grid">
+                    <p class="p-case">At this point I knew what the desirability was among our user base. However, building a product based on this aspect alone is like making a one-legged chair. Viability and feasibility are just as important to figure out to have a meaningful iteration.</p>
+                    <p class="p-case">Viability was where the money came into the picture. What will facilitate growth in revenue? What can we afford to build and validate quickly? And feasibility was a reality check with engineering. Can this work within our tech stack? Do we have the resources to build it in our team? The end result was a prioritised list of initiatives based on impact vs effort.</p>
+
+                    <div class="project-image-container">
+                        <img src="images/matrix.jpeg" class="project-hero-image-small">
+                    </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="delivery">
+        <div class="work-container">
+            <h2>MVP vs MLP</h2>
+                    <p class="p-case">The initial solution allowed users to get the job done. It wasn't perfect, but the functionality was there. It's an equivalent of an instant coffee when you're tired. And our users were surely getting tired of the bare basics we offered. The quality and delight aspects were important to address in the solutions we'll build.
+                    </p>
+                    <div class="project-image-container">
+                        <img src="images/mlp.jpeg" class="project-hero-image">
+                    </div>
+        </div>
+    </section>
+    
+    <section id="project-results">
+        <div class="work-container">
+            <h2>Putting everything together</h2>
+              <p class="p-case">The solution generation and validation went beyond wireframes. I needed to present a realistic prototype to understand whether the interface is intuitive but also to what extent it delights the users. As we ended up with a rather large list of improvements, the flow was elaborate and required users to complete multiple tasks. So I ran a moderated online user testing with selected merchants to find out whether the cross section of MLP pyramid was addressed and made some changes to the designs.
+              </p>
+              <div class="horizontal-scroll-container">
+                <img src="images/solution6.jpeg" class="horizontal-scroll-item">
+                <img src="images/solution7.jpeg" class="horizontal-scroll-item">
+                <img src="images/solution8.jpeg" class="horizontal-scroll-item">
+                <img src="images/solution9.jpeg" class="horizontal-scroll-item">
+            </div>
+        </div>
+       
+    </section>
+
+    <div class="work-container">
+        <h2>Takeaways</h2>
+        <p class="work-company">This was a challenging part of the product to work on, but I also deeply enjoyed it, perhaps because I was designing a designer interface which I think designers always have ideas for. Unpacking all the user feedback and understanding how to make the power users more productive while not overhwelming newcomers is a common conundrum in product design, but here it was especially prominent.
+        </p>
+        <p class="work-company">We did measure the user metrics that we'd set up - CSAT and CES, and the trend turned positive over time as we kept releasing incrementally. Though user feedback came to us in unexpected places as well. I like this screenshot of a user sharing excitement of our recent update. If users are actively sharing and promoting our updates, I think we've might have just added some delight to their day.
+        </p>
+        <div class="project-image-container">
+            <img src="images/fb.png" class="project-hero-image-small">
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+          <div class="footer-links-container">
+            <div class="footer-text">Thanks for stopping by!</div>
+            <div class="social-links">
+              <a href="mailto:ksprs@icloud.com">Email me</a>
+              <a href="https://www.linkedin.com/in/kasper-jelaiskis-8974b57b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://dribbble.com/kasperj" target="_blank" rel="noopener noreferrer">Dribbble</a>
+              <a href="https://read.cv/kasperj" target="_blank" rel="noopener noreferrer">Read.cv</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

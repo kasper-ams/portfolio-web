@@ -1,0 +1,5 @@
+# macOS folder metadata
+.DS_Store
+
+# Local preview server config (Claude Code)
+.claude/launch.json

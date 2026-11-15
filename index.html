@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script>
+      (function () {
+        var t;
+        try { t = localStorage.getItem('theme'); } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>Kasper Jelaiskis - Product Designer</title>
+   
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    
+
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <nav>
+                <a href="#about" class="active">About</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+        <button type="button" class="theme-toggle" role="switch" aria-checked="false" aria-label="Dark mode" title="Toggle dark mode">
+          <span class="theme-toggle-knob" aria-hidden="true">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </span>
+        </button>
+    </header>
+    
+    <section>
+        <div class="container">
+            <img src="avatar.png" alt="Profile Avatar" class="avatar">
+            <div class="tagline">   
+            <h3> Kasper is a seasoned product designer on a mission to make technology more human by </h3>
+            </div>
+            <h1 class="main-heading">Design-driven change</h1>
+
+          <div class="hero">
+            <div class="hero-text">
+                <h2>Creating beautiful experiences with <span class="highlight">real impact</span> on business.</h2>
+            </div>
+            <div class="hero-desc">
+              <h3>What drives me is the ability to create a positive impact through design. I believe technology should be an enabler, serving the human kind.</h3>
+              <h3>10+ year experience working in computer vision, B2B, SaaS, e-commerce, platforms & mobile.</h3>
+            </div>
+          </div>
+          <a href="#" class="download-btn">Download resume</a>
+        </div>
+      </section>
+    
+    <section>
+        <div class="container">
+            <h2>Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon icon-1">
+                        <img src="val-1.png" alt="Empowered" class="icon-img">
+                    </div>
+                    <h4>Empowered in autonomy</h4>
+                    <p>I’ve affinity for driven & self sufficient teams. Missionaries over mercenaries.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon icon-2">
+                        <img src="val-2.png" alt="Details" class="icon-img">
+                    </div>
+                    <h4>Details in the big picture</h4>
+                    <p>Seeing the forest from the trees. Keeping an eye on that 8px grid.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon icon-3">
+                        <img src="val-3.png" alt="Learning" class="icon-img">
+                    </div>
+                    <h4>Always learning</h4>
+                    <p>Design, sociology, thought leadership & psychology are my favorite topics.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon icon-4">
+                        <img src="val-4.png" alt="Fun" class="icon-img">
+                    </div>
+                    <h4>Fun is part of the job</h4>
+                    <p>I’ll throw some smileys here and there 🙂</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <h2>What I do</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>End to end process</h3>
+                    <hr class="card-divider">
+                    <p>Starting with problem discovery all the way to measuring the impact. I lead the design process through multiple stages to arrive at a validated solution design.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Design systems</h3>
+                    <hr class="card-divider">
+                    <p>Crafting components is my second nature. I enjoy providing structure and clarity in complex design systems to make them maintainable and scalable.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Mentoring</h3>
+                    <hr class="card-divider">
+                    <p>I find it rewarding to help others - especially if we are talking about design skills. I'm coaching both in-house, and externally, with occasional conference talks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="work-section">
+        <div class="container">
+            <h2>Selected work</h2>
+            <div class="work-list">
+                <div class="work-item">
+                    <img src="images/sleepcast-cover.png" alt="Sleepcast" class="work-image">
+                    <a href="sleepcast.html">
+                        <div class="work-title">Hacking engagement</div>
+                        <div class="work-company">Sleepcast</div>
+                    </a>
+                </div>
+                <div class="work-item">
+                    <img src="images/HM2.png" alt="HackMotion" class="work-image">
+                    <a href="hackmotion.html">
+                        <div class="work-title">Refining product market fit</div>
+                        <div class="work-company">HackMotion</div>
+                    </a>
+                </div>
+                <div class="work-item">
+                    <img src="images/pfy_cover3.png" alt="Printify" class="work-image">
+                    <a href="printify1.html">
+                        <div class="work-title">Reimagining product management</div>
+                        <div class="work-company">Printify</div>
+                    </a>
+                </div>
+                <div class="work-item">
+                    <img src="images/pfy_cover1.png" alt="Printify" class="work-image">
+                    <a href="printify2.html">
+                        <div class="work-title">Empowering creative entrepreneurs</div>
+                        <div class="work-company">Printify</div>
+                    </a>
+                </div>
+                <div class="work-item">
+                    <img src="work-grandvision.jpg" alt="GrandVision" class="work-image">
+                    <a href="grandvision.html">
+                        <div class="work-title">Scaling ecommerce</div>
+                        <div class="work-company">GrandVision</div>
+                    </a>
+                </div>
+                <div class="work-item">
+                    <img src="images/illustrations.jpg" alt="Product Illustrations" class="work-image">
+                    <a href="illustrations.html">
+                        <div class="work-title">Error and empty states</div>
+                        <div class="work-company">Product illustrations</div>
+                    </a>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <h2>Certifications</h2>
+            <div class="cert-list">
+                <div class="cert-item">
+                    <div>Activation, engagement strategies</div>
+                    <div>Reforge/23</div>
+                </div>
+                <div class="cert-item">
+                    <div>Leading for creativity</div>
+                    <div>Ideo/20</div>
+                </div>
+                <div class="cert-item">
+                    <div>Applied neuromarketing</div>
+                    <div>CXL/20</div>
+                </div>
+                <div class="cert-item">
+                    <div>Digital Psychology & Behavioral Design Training</div>
+                    <div>CXL/20</div>
+                </div>
+                <div class="cert-item">
+                    <div>Cultivating creative collaboration</div>
+                    <div>Ideo/19</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+          <div class="footer-links-container">
+            <div class="footer-text">Thanks for stopping by!</div>
+            <div class="social-links">
+              <a href="mailto:ksprs@icloud.com">Email me</a>
+              <a href="https://www.linkedin.com/in/kasper-jelaiskis-8974b57b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://dribbble.com/kasperj" target="_blank" rel="noopener noreferrer">Dribbble</a>
+              <a href="https://read.cv/kasperj" target="_blank" rel="noopener noreferrer">Read.cv</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
